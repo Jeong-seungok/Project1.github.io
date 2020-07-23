@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코딩부스터</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css"> <!--외부스타일시트 불러오기-->
+    <style type="text/css">
+    blockquote{
+        border-left: 10px solid paleturquoise;
+        quotes: '\201C' '\201D' '\2018' '\2019';
+    }
+    blockquote:before{
+        content: open-quote;
+        font-size: 3em;
+        line-height: 0.1em;
+        color: #bbbbbb;
+        margin-left: 0.25em;
+        vertical-align: -0.4em;
+    }
+    blockquote:after{
+        content: close-quote;
+        font-size: 3em;
+        line-height: 0.1em;
+        color: #bbbbbb;
+        margin-left: 0.25em;
+        vertical-align: -0.4em;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default"> 
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> 
+                <a href="index.html" class="navbar-brand">코딩 부스터</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">소개<span class="sr-only"></span></a></li>
+                    <li><a href="instructor.html">강사진</a></li>
+                    <li class="dropdown"><a class="dropdwon-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="">강의<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lecture.html?lectureName=HTML">HTML</a></li>
+                            <li><a href="lecture.html?lectureName=CSS">CSS</a></li>
+                            <li><a href="lecture.html?lectureName=JAVASCRIPT">JAVASCRIPT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="내용을 입력하세요.">
+                    </div>
+                        <button type="submit" class="btn btn-info">검색</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="" class="dropdwon-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">접속하기<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="loginform.html">로그인</a></li>
+                            <li><a href="registerform.html">회원가입</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;정승옥</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="images/computer.jpg" class="media-object" width="250px" height="200px">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading"><h4>정승옥</h4>홈페이지 제작자입니다</div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>강사명</th>
+                                <th>강의 번호</th>
+                                <th>강의 제목</th>
+                                <th>강의 날짜</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>정승옥</th>
+                                <th>1</th>
+                                <th><a href="lecture.html?lectureName=HTML">HTML</a></th>
+                                <th>2020-04-24</th>
+                            </tr>
+                            <tr>
+                                <th>정승옥</th>
+                                <th>2</th>
+                                <th><a href="lecture.html?lectureName=CSS">CSS</a></th>
+                                <th>2020-04-24</th>
+                            </tr>
+                            <tr>
+                                <th>정승옥</th>
+                                <th>3</th>
+                                <th><a href="lecture.html?lectureName=JAVASCRIPT">JAVASCRIPT</a></th>
+                                <th>2020-04-24</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="panel-footer">
+                        <blockquote>
+                            &nbsp;&nbsp;인용
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color:#000000; color: #ffffff;"> <!--푸터 전체배경 검정색, 글자색 흰색-->
+        <div class="container">
+            <br>
+            <div class="row"> <!--총 12칸으로 나눠진 레이아웃을 사용할 크기만큼 분배해서 사용-->
+                <div class="col-sm-2"><h5 style="text-align: center;"><p>Copyright &copy; 2020</p><p>정승옥(Jeong SeungOk)</p></h5></div>
+                <div class="col-sm-4"><h4>대표자 소개</h4><p>저는 코딩을 공부하고 있는 정승옥입니다. 현재 가천대학교 컴퓨터공학과에 재학중입니다.</p></div>
+                <div class="col-sm-2"><h4 style="text-align: center;">네비게이션</h4>
+                    <div class="list-group" style="text-align: center;">
+                        <a class="list-group-item" href="index.html">소개</a>
+                        <a class="list-group-item" href="instructor.html">강사진</a>
+                        <a class="list-group-item" href="lecture.html">개설강좌</a>
+                    </div>
+                </div>
+                <div class="col-sm-2"><h4 style="text-align: center;">SNS</h4>
+                    <div class="list-group" style="text-align: center;">
+                        <a class="list-group-item" href="http://www.youtube.com">유튜브</a>
+                        <a class="list-group-item" href="http://www.instagram.com">인스타</a>
+                        <a class="list-group-item" href="http://www.facebook.com">페이스북</a>
+                    </div>
+                </div>
+                <div class="col-sm-2"><h4><span class="glyphicon glyphicon-ok"></span>&nbsp;정승옥</h4></div>
+            </div>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
